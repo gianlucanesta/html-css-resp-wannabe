@@ -1,5 +1,7 @@
+
+
 .row {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
@@ -74,35 +76,36 @@ img {
 
 /* Desktop  First*/
 @media screen and (max-width: 419px) {
-  
-  #lezioni .container{
-    width: 100%;
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
   }
 
   .row {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap; 
     flex-direction: column;
     align-items: center;
   } 
-
-  .row .left , .right , img{
-    
-    justify-content: center;
-  }
- 
-  #lezioni img {
-    width: 100%;
-    height: auto;
-  }
-
-  #steps img {
-    height: auto;
-  }
-
-  #why img {
-    width: 40%;
-    height: auto;
-  }
   
+ 
+  #lezioni .row>.left, #lezioni .row>.right {  
+    width: 80%;
+    margin-bottom: 3%;
+  }
+
+  #steps .row>.left, #steps .row>.central, 
+  #steps .row>.right {
+  width: 70%;
+    margin-bottom: 3%;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    width: 70%;
+    margin-top: 80px;
+  }
+
 }
