@@ -87,16 +87,17 @@ img {
     flex-direction: column;
     align-items: center;
   } 
-  
  
   #lezioni .row>.left, #lezioni .row>.right {  
     width: 80%;
+    float: none;
     margin-bottom: 3%;
   }
 
   #steps .row>.left, #steps .row>.central, 
   #steps .row>.right {
-  width: 70%;
+    width: 70%;
+    float: none;
     margin-bottom: 3%;
   }
 
@@ -107,4 +108,8 @@ img {
     margin-top: 80px;
   }
 
+  img {
+    width: 60%;
+    height: auto;
+  }
 }
